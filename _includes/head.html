@@ -7,14 +7,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="robots" content="all"/>
   <meta name="yandex-verification" content="ae9f8d350edbe0b2" />
-  
+
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
   <link rel="stylesheet" href="{{ "/assets/main.css?v=" | append: site.time | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <!-- <link rel="icon" href="{{ "/assets/favicon.png" | relative_url }}" type="image/png"> -->
-  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "/assets/favicon.ico" | relative_url }}" type="image/x-icon">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
