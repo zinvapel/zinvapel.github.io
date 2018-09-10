@@ -2,7 +2,7 @@ title: "Блог разработчика"
 email: zinvapel@icloud.com
 description: ""
 excerpt_separator: <!--more-->
-baseurl: "/v2"
+baseurl: "/"
 url: "https://zinvapel.github.io"
 twitter_username: zinvapel
 github_username:  zinvapel
