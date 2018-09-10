@@ -24,7 +24,7 @@ defaults:
       author: "zinvapel"
       comments: true
 disqus:
-  shortname: zinvapel-github-io-v2
+  shortname: zinvapel-github-io
   # zinvapel@icloud.com
 
 # Build settings
