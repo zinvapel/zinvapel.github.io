@@ -7,6 +7,7 @@ Sitemap: {{ '/sitemap.xml' | absolute_url }}
 User-agent: *
 Disallow: /script
 Disallow: /author
+Disallow: /pages/search/*
 Host: https://zinvapel.github.io
 
 {% for page in site.pages %}
