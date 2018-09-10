@@ -1,0 +1,6 @@
+{% unless page[include.field] %}
+  {% comment %}
+    # This code fail a build because page does not have {{ include.field }}
+  {% endcomment %}
+  <a href={{ '/dev/null?' | append: include.field | relative_url }}>nonexistent URL</a>
+{% endunless %}

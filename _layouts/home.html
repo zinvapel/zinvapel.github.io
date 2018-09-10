@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="home">
+
+{{ content }}
+
+  <h2 class="page-heading">Записи блога:</h2>
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        {% include post.html post=post %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.previous_page %}
+  <div class="previous" style="float: left;">
+      &#8592; <a href="{{ paginator.previous_page_path | relative_url }}">Предыдущие посты</a>
+  </div>
+  {% endif %}
+  {% if paginator.next_page %}
+  <div class="next" style="float: right;">
+      <a href="{{ paginator.next_page_path | relative_url }}">Следующие посты</a> &#8594;
+  </div>
+  {% endif %}
+  <div class="next" style="clear: both;"></div>
+
+</div>

@@ -1,0 +1,84 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% comment %}
+    Все посты попадают в карту
+  {% endcomment %}
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ post.url | absolute_url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% comment %}
+        Врядли будут менятся
+      {% endcomment %}
+      <changefreq>monthly</changefreq>
+      {% comment %}
+        Не стоит тратить силы
+      {% endcomment %}
+      <priority>0.1</priority>
+    </url>
+  {% endfor %}
+
+  {% comment %}
+    Все страницы попадают в карту
+  {% endcomment %}
+  {% for page in site.pages %}
+    {% unless page.noindex %}
+    <url>
+      <loc>{{ page.url | absolute_url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% comment %}
+        Врядли будут менятся
+      {% endcomment %}
+      <changefreq>monthly</changefreq>
+      {% comment %}
+        Не стоит тратить силы
+      {% endcomment %}
+      <priority>0.1</priority>
+    </url>
+    {% endunless %}
+  {% endfor %}
+
+  {% comment %}
+    Главная
+  {% endcomment %}
+   <url>
+      <loc>{{ '/' | absolute_url }}</loc>
+      <!-- <lastmod>Отсутствует</lastmod> -->
+      {% comment %}
+        Могут быть новые посты, нужно проверять
+      {% endcomment %}
+      <changefreq>always</changefreq>
+      {% comment %}
+        Посты появляются постоянно, нужен высокий приоритет
+      {% endcomment %}
+      <priority>1</priority>
+   </url>
+
+  {% comment %}
+    Страница about
+  {% endcomment %}
+  <url>
+     <loc>{{ '/about' | absolute_url }}</loc>
+     <!-- <lastmod>Отсутствует</lastmod> -->
+     {% comment %}
+       Могут быть новые посты, нужно проверять
+     {% endcomment %}
+     <changefreq>never</changefreq>
+     {% comment %}
+       Посты появляются постоянно, нужен высокий приоритет
+     {% endcomment %}
+     <priority>0.1</priority>
+  </url>
+</urlset>

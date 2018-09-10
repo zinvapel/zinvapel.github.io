@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /robots.txt
+---
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
+
+User-agent: *
+Disallow: /search
+Disallow: /script
+Disallow: /author
+Host: https://zinvapel.github.io
+
+{% for page in site.pages %}
+{% if page.noindex %}
+Disallow: {{ page.url | absolute_url }}
+{% endif %}
+{% endfor %}

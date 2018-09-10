@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+bundle exec jekyll build --baseurl ''
+bundle exec htmlproofer --disable-external --assume-extension --url-ignore '#' ./_site

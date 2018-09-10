@@ -1,0 +1,55 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="программирование блог разработка php backend frontend development">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="robots" content="all"/>
+  <meta name="yandex-verification" content="ae9f8d350edbe0b2" />
+  
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <link rel="stylesheet" href="{{ "/assets/main.css?v=" | append: site.time | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <!-- <link rel="icon" href="{{ "/assets/favicon.png" | relative_url }}" type="image/png"> -->
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+  {% if jekyll.environment == 'production' %}
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter46464702 = new Ya.Metrika({
+                        id:46464702,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/46464702" style="position:absolute; left:-9999px;" alt="Yandex.Metrika" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  {% endif %}
+</head>

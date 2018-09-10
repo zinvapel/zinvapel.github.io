@@ -1,0 +1,42 @@
+title: "Блог разработчика"
+email: zinvapel@icloud.com
+description: ""
+excerpt_separator: <!--more-->
+baseurl: "/v2"
+url: "https://zinvapel.github.io"
+twitter_username: zinvapel
+github_username:  zinvapel
+author: "zinvapel"
+lang: "ru"
+
+# Site settings
+permalink: pretty
+paginate: 5
+pagination_path: /page/:num/
+defaults:
+  # Posts and notes
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "zinvapel"
+      comments: true
+disqus:
+  shortname: zinvapel-github-io-v2
+  # zinvapel@icloud.com
+
+# Build settings
+theme: minima
+# highlighter: pygments does not support by GitHub Pages
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  # For internal use only
+  # - jekyll-sitemap
+future: false
+exclude:
+  - README.md
+  - vendor/

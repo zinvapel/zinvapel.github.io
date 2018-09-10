@@ -1,0 +1,14 @@
+<h3>&nbsp;&nbsp;
+  <a class="header-link" href="{{ include.post.url | relative_url }}">
+    {{ include.post.title | escape }}
+  </a>
+</h3>
+<div class="post-excerpt">
+  {{ include.post.excerpt }}
+</div>
+<div class='post-footer'>
+  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+  Опубликовано: <span class="post-meta">{{ include.post.date | date: date_format }}</span>
+  &nbsp;Автор: <span class="post-meta">{{ include.post.author }}</span>
+  <a class="post-link" href="{{ include.post.url | relative_url }}">Читать далее...</a>
+</div>

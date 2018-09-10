@@ -1,0 +1,18 @@
+{% comment %}
+  # This code fail a build because page must have a category
+{% endcomment %}
+{% include check_one.html field='category' %}
+
+{% comment %}
+  # This code fail a build because page, post and note must have a date
+{% endcomment %}
+{% include check_one.html field='date' %}
+
+{% comment %}
+  # Check all posts in site
+{% endcomment %}
+{% for post in site.posts %}
+  {% if post.excerpt == post.content %}
+    {% include check_one.html field=post.id %}
+  {% endif %}
+{% endfor %}
