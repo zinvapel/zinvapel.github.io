@@ -20,5 +20,7 @@ noindex: true
 
 ### Список полезняшек
 <table style="border-collapse: collapse; border: none;">
+{% include epost.html date="2018-07-10" url="https://github.com/squizlabs/PHP_CodeSniffer" title="Проверка синтаксиса PHP. Code sniffer." %}
+{% include epost.html date="2018-09-15" url="https://github.com/phpstan" title="Статический анализатор PHP. Phpstan." %}
 {% include epost.html date="2018-10-04" url="http://jmsyst.com/bundles/JMSAopBundle" title="Аспектно-ориентированное программирование для Symfony" %}
 </table>
