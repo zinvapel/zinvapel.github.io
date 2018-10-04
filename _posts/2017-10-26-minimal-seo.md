@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Заметки] Минимальный SEO-набор"
+title: "[Заметка] Минимальный SEO-набор"
 date: '2017-10-26'
 category:
   - it

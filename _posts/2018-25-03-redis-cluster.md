@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Redis Cluster"
+title: "[Заметка] Redis Cluster"
 date: "2018-03-25"
 category:
   - it

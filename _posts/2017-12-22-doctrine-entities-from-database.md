@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Генерируем Entity из базы данных"
+title: "[Заметка] Генерируем Entity из базы данных"
 date: "2017-12-22"
 category:
   - it

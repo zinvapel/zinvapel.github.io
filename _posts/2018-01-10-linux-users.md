@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Управление доступом в Linux"
+title: "[Пост] Управление доступом в Linux"
 date: "2018-01-10"
 category:
   - it
