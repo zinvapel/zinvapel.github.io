@@ -5,7 +5,7 @@ permalink: /posts
 category: about
 date: 2017-10-25 21:08:00+03:00
 ishead: true
-noindex: true
+noindex: false
 ---
 
 ### Список постов
@@ -23,4 +23,5 @@ noindex: true
 {% include epost.html date="2018-07-10" url="https://github.com/squizlabs/PHP_CodeSniffer" title="Проверка синтаксиса PHP. Code sniffer." %}
 {% include epost.html date="2018-09-15" url="https://github.com/phpstan" title="Статический анализатор PHP. Phpstan." %}
 {% include epost.html date="2018-10-04" url="http://jmsyst.com/bundles/JMSAopBundle" title="Аспектно-ориентированное программирование для Symfony" %}
+{% include epost.html date="2018-10-09" url="https://github.com/zinvapel/Front-End-Checklist" title="Чек лист вашего фронтенда" %}
 </table>
