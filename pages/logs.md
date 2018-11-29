@@ -38,8 +38,8 @@ noindex: false
       [HTTPS] Чтобы добавить поддержку HTTPS в локальный nginx-сервер, необходимо создать самоподписанный сертификат по инструкции https://ksearch.wordpress.com/2017/08/22/generate-and-import-a-self-signed-ssl-certificate-on-mac-osx-sierra/, после чего добавить полученные файлы в настройки nginx.
       {%- highlight bash -%}
 listen              443 ssl;
-ssl_certificate     /etc/ssl/certs/admin.courier-schedule.yandex-team.ru.crt;
-ssl_certificate_key /etc/ssl/private/admin.courier-schedule.yandex-team.ru.key;
+ssl_certificate     /etc/ssl/certs/sert.crt;
+ssl_certificate_key /etc/ssl/private/key.key;
       {%- endhighlight -%}
     </td>
   </tr>
