@@ -24,4 +24,6 @@ noindex: false
 {% include epost.html date="2018-09-15" url="https://github.com/phpstan" title="Статический анализатор PHP. Phpstan." %}
 {% include epost.html date="2018-10-04" url="http://jmsyst.com/bundles/JMSAopBundle" title="Аспектно-ориентированное программирование для Symfony" %}
 {% include epost.html date="2018-10-09" url="https://github.com/zinvapel/Front-End-Checklist" title="Чек лист вашего фронтенда" %}
+{% include epost.html date="2018-10-26" url="https://gist.github.com/zinvapel/b4bff01c52f927ab136a3fa9021966f4" title="Про JWT токены" %}
+{% include epost.html date="2018-11-12" url="https://www.perforce.com/blog/git-beyond-basics-using-shallow-clones" title="Ускорение получения зависимостей Git. Shallow clone." %}
 </table>
