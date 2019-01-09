@@ -28,7 +28,7 @@ disqus:
   # zinvapel@icloud.com
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 # highlighter: pygments does not support by GitHub Pages
 markdown: kramdown
 plugins:
