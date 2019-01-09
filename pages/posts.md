@@ -27,4 +27,5 @@ noindex: false
 {% include epost.html date="2018-10-26" url="https://gist.github.com/zinvapel/b4bff01c52f927ab136a3fa9021966f4" title="Про JWT токены" %}
 {% include epost.html date="2018-11-12" url="https://www.perforce.com/blog/git-beyond-basics-using-shallow-clones" title="Ускорение получения зависимостей Git. Shallow clone." %}
 {% include epost.html date="2018-11-29" url="https://danielmiessler.com/study/tcpdump/" title="Использование tcpdump." %}
+{% include epost.html date="2019-01-09" url="https://www.rabbitmq.com/documentation.html" title="RabbitMQ." %}
 </table>
