@@ -4,7 +4,7 @@ title: Логи интересных мелочей
 permalink: /logs
 category: about
 date: '2018-10-09'
-ishead: false
+ishead: true
 noindex: false
 ---
 
