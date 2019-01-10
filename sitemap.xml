@@ -34,7 +34,11 @@ permalink: /sitemap.xml
     <url>
       <loc>{{ page.url | absolute_url }}</loc>
       {% if post.lastmod == null %}
+        {% if page.date %}
         <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+        <lastmod>{{ "now" | date_to_xmlschema }}</lastmod>
+        {% endif %}
       {% else %}
         <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
