@@ -35,7 +35,7 @@ noindex: false
   <tr>
     <td style="font-family: monospace;">{{ '2018-11-29' | date: "%d.%m.%Y" }}</td>
     <td>
-      [HTTPS] Чтобы добавить поддержку HTTPS в локальный nginx-сервер, необходимо создать самоподписанный сертификат по <a style="border: none; padding: 0;" href ="https://ksearch.wordpress.com/2017/08/22/generate-and-import-a-self-signed-ssl-certificate-on-mac-osx-sierra/">инструкции</a>, после чего добавить полученные файлы в настройки nginx.
+      [HTTPS] Чтобы добавить поддержку HTTPS в локальный nginx-сервер, необходимо создать самоподписанный сертификат по <a style="border: none; padding: 0;" href ="https://gist.github.com/zinvapel/626a8d64e074bc4dd1bd8451955151f0">инструкции</a>, после чего добавить полученные файлы в настройки nginx.
 <pre>listen              443 ssl;
 ssl_certificate     /etc/ssl/certs/sert.crt;
 ssl_certificate_key /etc/ssl/private/key.key;</pre>
