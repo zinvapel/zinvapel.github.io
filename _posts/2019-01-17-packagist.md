@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Пост] Публикуем PHP библиотеку в Packagist"
-date: '2019-01-10'
+date: '2019-01-17'
 category:
   - it
   - tools
