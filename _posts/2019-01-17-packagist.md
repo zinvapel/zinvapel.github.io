@@ -26,7 +26,7 @@ require [--dev] [--prefer-source] [--prefer-dist] [--no-progress] [--no-suggest]
 
 Чтобы сделать библиотеку доступной, необходимо выполнить несколько действий:
 - Затегировать его:
-```
+{% highlight bash %}
 $ git tag -a 0.1 -m 0.1
 $ git push origin master --tags
 Enumerating objects: 1, done.
@@ -35,7 +35,7 @@ Writing objects: 100% (1/1), 162 bytes | 162.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0)
 To github.com:zinvapel/enumeration.git
  * [new tag]         0.1 -> 0.1
-```
+{% endhighlight %}
 
 - Регистрируюсь на Packagist [https://packagist.org/register/](https://packagist.org/register/)
 - Подключаю Packagist к GitHub [https://packagist.org/profile/edit](https://packagist.org/profile/edit)
