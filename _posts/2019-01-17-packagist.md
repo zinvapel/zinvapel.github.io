@@ -48,7 +48,7 @@ To github.com:zinvapel/enumeration.git
 Теперь во вкладке 'My packages' будет добавлен репозиторий:
 {% include image.html src="/assets/it/tools/packagist/repo_view.png" %}
 
-В настройках проекта на GitHub в разделе 'Webhooks' появится новый хук, который ответственнен за публикацию новых версий в Packagist.
+В настройках проекта на GitHub в разделе 'Webhooks' появится новый хук, который ответственен за публикацию новых версий в Packagist.
 {% include image.html src="/assets/it/tools/packagist/hooks.png" %}
 
 Ну и самое главное, библиотека будет доступна всем:
