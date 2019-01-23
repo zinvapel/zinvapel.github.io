@@ -24,7 +24,7 @@ noindex: false
   <tr>
     <td style="font-family: monospace;">{{ '2018-11-12' | date: "%d.%m.%Y" }}</td>
     <td>
-        [Docker] Docker For Mac завис в статусу <code class="highlighter-rouge">Docker is starting</code>.
+        [Docker] Docker For Mac завис в статусе <code class="highlighter-rouge">Docker is starting</code>.
         - Подключаемся к терминалу
         - <code class="highlighter-rouge">screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty</code>
         - Нажимаем пару раз enter. Если ничего не происходит - порестартьте докер. (отключиться от терминала -  Ctrl+A+D ). Ничего не видим, но жмакаем пару раз Enter вслепую, должны побежать буквы и строки загрузки linux kernel. Отключаемся от терминала - Profit!

@@ -4,7 +4,7 @@ title: Случайная тема
 permalink: /gssl
 category: about
 date: '2019-01-09'
-ishead: true
+ishead: false
 noindex: false
 ---
 
