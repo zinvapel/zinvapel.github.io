@@ -28,4 +28,5 @@ noindex: false
 {% include epost.html date="2018-11-12" url="https://www.perforce.com/blog/git-beyond-basics-using-shallow-clones" title="Ускорение получения зависимостей Git. Shallow clone." %}
 {% include epost.html date="2018-11-29" url="https://danielmiessler.com/study/tcpdump/" title="Использование tcpdump." %}
 {% include epost.html date="2019-01-09" url="https://www.rabbitmq.com/documentation.html" title="RabbitMQ." %}
+{% include epost.html date="2019-01-30" url="https://habr.com/ru/company/oleg-bunin/blog/433322/" title="REST и JSON API" %}
 </table>
